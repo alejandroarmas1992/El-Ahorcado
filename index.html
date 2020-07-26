@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Red+Rose:wght@300&display=swap" rel="stylesheet">
+
+	    <link rel="stylesheet" type="text/css" href="index.css">
+	    <script src="https://kit.fontawesome.com/9505703dda.js" crossorigin="anonymous"></script>
+	    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap" rel="stylesheet">
+	<title>JUEGO DEL PROYECTO</title>
+</head>
+<body>
+	<!----Inicio del Juego ------>
+	<div class="container">
+		<div class="row" >
+			<div class="col-12">
+				<h1 class="titulo">Juego del Ahorcado</h1>
+			</div>
+			<!--- juego del ahorcado---->
+			<div class="row">
+			<div class="col-8" id="primero">
+		        <h1 id="msg-final" style="font-size: 30px;"></h1>
+		        <h3 id="acierto"></h3>
+		        <div class="flex-row no-wrap" id="dibujo_ahorcado">
+		          <h2 class="palabra" id="palabra"></h2>
+		          <picture >
+		            <img src="img/ahorcado_6.png" alt="" id="image6">
+		            <img src="img/ahorcado_5.png" alt="" id="image5">
+		            <img src="img/ahorcado_4.png" alt="" id="image4">
+		            <img src="img/ahorcado_3.png" alt="" id="image3">
+		            <img src="img/ahorcado_2.png" alt="" id="image2">
+		            <img src="img/ahorcado_1.png" alt="" id="image1">
+		            <img src="img/ahorcado_0.png" alt="" id="image0">
+		          </picture>
+		        </div>
+		        <div class="flex-row" id="turnos">
+		          <div class="col">
+		            <h3>Intentos restantes: <span id="intentos">6</span></h3>
+		          </div>
+		          <div class="col">
+		            <button onclick="inicio()" id="reset" style="background: #69B1BC; color:white;margin-top: 34px;
+    					margin-left: 63px;">Elegir otra palabra</button>
+		            <span id="hueco-pista"></span>
+		          </div>
+		          </div>
+		        
+		        <div class="flex-row">
+		          <div class="col">
+		            <div class="flex-row" id="abcdario">
+		            </div>
+		          </div>
+		          <div class="col"></div>
+		        </div>
+
+			</div>
+
+
+			</div>
+			<!----Ventana Emergente Ruleta --->
+			<div  id="segundo">
+				<div>
+				<a href="javascript:cerrar()"><img id="cancelar" src="cancelar.png"></a>
+				</div>
+				<div id="notif">GIRA LA RULETA</div>
+				<div id="separador"></div>
+				<div class="vara"></div>
+				<img src="imagen.png" id="ruleta">
+			</div>
+		</div>
+
+	</div>
+
+	
+	<script src="index.js"></script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

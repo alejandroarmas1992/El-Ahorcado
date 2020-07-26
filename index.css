@@ -1,0 +1,187 @@
+#primero{
+	background: white;
+	border: 1px solid;
+    width: 1200px;
+    height: 450px;
+	border-radius: 10px;
+    padding: 10px;
+    margin: 0px auto;
+
+}
+title{
+    font-family: "Comic Sans MS";
+}
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+body{
+    background-image: url("fondo_cont.jpg") ;
+    background-position: 0 0;
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+
+.main-container {
+
+  max-width: 1800px;
+    max-height: 600px;
+  margin: auto;
+
+}
+h1.titulo {
+ margin: 20px;
+    color: white;
+  text-align: center;
+    font-size: 60px;
+    width:  auto;
+    height:  auto;
+    background: linear-gradient(180deg, #0090ff, #3d4545);
+    font-family: "Comic Sans MS";
+}
+h1#msg-final {
+  text-align: center;
+  color: crimson;
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: green;
+}
+
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: royalblue;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto; 
+}
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.col {
+  width: 50%;
+  text-align: center;
+}
+.col span {
+  
+}
+#turnos h3 {
+  margin: auto;
+}
+h3 span {
+   color: #22AFE3;
+}
+.letra:disabled {
+  color:rgba(255, 0, 0, 0.5);
+}
+picture {
+  position: relative;
+}
+picture img {
+     position: absolute;
+    top: -52px;
+    left: -143px;
+    /* height: 152px; */
+    width: 163px;
+}
+#image5, #image4, #image3,
+#image2, #image1, #image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+.encuadre {
+  border: 2px dashed crimson;
+  padding: 3px 2px 2px 6px;
+}
+button{
+	border-radius: 6.5px;
+	margin: 0;
+    /* font-family: inherit; */
+    font-size: inherit;
+    line-height: inherit;
+    background: #E0A800;
+}
+img#cancelar{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 350px;
+}
+#separador{
+    height: 95px;
+}
+
+/*RULETA*/
+#segundo{
+    background: linear-gradient(to bottom, blue, white 80%, orange);
+
+    display:none;
+    width: 450px;
+    height: auto;
+    color: white;
+    padding: 33px;
+    border-radius: 22px;
+    position: absolute;
+    left: 34%;
+    top:25%;
+
+}
+
+.vara {
+    height: 70px;
+    width: 15px;
+    background-color: #aaa;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    border-radius: 0px 0px 8px 8px;
+    border: 1px solid #000;
+    border-top: 5px solid #000;
+    z-index: 1000;
+}
+img {
+    width: 350px; height: auto;
+    z-index: 100;
+    transition: all 5s;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+#notif{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+    padding: 15px 20px 20px;
+    font-family: "Comic Sans MS";
+}
+
